@@ -1,0 +1,54 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "jsRules": {
+    "no-unused-expression": true
+  },
+  "rules": {
+    "quotemark": [true, "single"],
+    "member-access": [false],
+    "ordered-imports": [true],
+    "max-line-length": [true, 150],
+    "member-ordering": [false],
+    "arrow-parens": true,
+    "object-literal-sort-keys": false,
+    "class-name": true,
+    "arrow-return-shorthand": true,
+    "comment-format": [
+      true,
+      "check-space",
+      "check-uppercase",
+      "allow-trailing-lowercase"
+    ],
+    "comment-type": [true, "doc", "singleline"],
+    "file-name-casing": [true, "kebab-case"],
+    "interface-name": [true, "always-prefix"],
+    "no-boolean-literal-compare": true,
+    "one-line": [true, "check-catch", "check-finally", "check-else"],
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "prefer-template": true,
+    "space-before-function-paren": false,
+    "type-literal-delimiter": false,
+    "eofline": true,
+    "no-consecutive-blank-lines": [true, 2],
+    "no-irregular-whitespace": true,
+    "no-trailing-whitespace": true,
+    "number-literal-format": true,
+    "semicolon": [true, "never"],
+    "trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-operator",
+      "check-typecast",
+      "check-type-operator",
+      "check-module"
+    ],
+    "no-implicit-dependencies": [true, "dev"],
+    "only-arrow-functions": true,
+    "no-console": [true, "log", "error"],
+    "no-string-literal": true,
+    "triple-equals": [true, "allow-null-check", "allow-undefined-check"]
+  },
+  "rulesDirectory": []
+}

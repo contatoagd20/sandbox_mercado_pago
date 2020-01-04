@@ -1,0 +1,20 @@
+version: '3'
+services:
+  payment_router:
+    image: node:10-alpine
+    working_dir: /usr/local/app
+    command: npm run start:dev
+    restart: on-failure
+    environment:
+      PORT: 8002
+    ports:
+      - '8002:8000'
+    volumes:
+      - .:/usr/local/app
+    networks:
+      - payment_router
+
+networks:
+  payment_router:
+    external:
+      name: payment_router
