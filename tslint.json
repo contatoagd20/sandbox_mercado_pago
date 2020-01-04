@@ -10,7 +10,7 @@
     "ordered-imports": [true],
     "max-line-length": [true, 150],
     "member-ordering": [false],
-    "arrow-parens": true,
+    "arrow-parens": false,
     "object-literal-sort-keys": false,
     "class-name": true,
     "arrow-return-shorthand": true,
