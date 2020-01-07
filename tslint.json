@@ -48,7 +48,8 @@
     "only-arrow-functions": true,
     "no-console": [true, "log", "error"],
     "no-string-literal": true,
-    "triple-equals": [true, "allow-null-check", "allow-undefined-check"]
+    "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
+    "linebreak-style": [true, "LF"]
   },
   "rulesDirectory": []
 }
