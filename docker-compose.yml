@@ -6,9 +6,11 @@ services:
     command: npm run start:dev
     restart: on-failure
     environment:
-      PORT: 8002
-      PUBLIC_KEY: TEST-fbc6a33a-4594-4aa9-93e6-57e0f2b70d3a
-      ACCESS_TOKEN: TEST-1473010791509957-010413-72b80cbf23ae672e41f37fde73c1e292-510254024
+      PORT: ${PORT}
+      PUBLIC_KEY: ${PUBLIC_KEY}
+      ACCESS_TOKEN: ${ACCESS_TOKEN}
+      CLIENT_ID: ${CLIENT_ID}
+      CLIENT_SECRET: ${CLIENT_SECRET}
     ports:
       - '8002:8000'
     volumes:
